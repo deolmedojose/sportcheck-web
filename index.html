@@ -95,13 +95,15 @@
     position: relative;
     overflow: hidden;
   }
-  .hero::before {
+  /* Línea central de pista/campo — vale para cualquiera de los deportes de
+     la app. Único acento decorativo del héroe, en vez del degradado
+     genérico que había antes. */
+  .hero::after {
     content: "";
     position: absolute;
-    top: -220px; right: -180px;
-    width: 560px; height: 560px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(95,166,39,0.22), rgba(95,166,39,0) 68%);
+    top: -30px; right: 210px;
+    width: 1.5px; height: 480px;
+    background: rgba(95,166,39,0.3);
     pointer-events: none;
   }
   .hero-grid {
@@ -736,7 +738,6 @@
 <section class="demo" id="demo">
   <div class="wrap demo-wrap">
     <div class="demo-copy reveal">
-      <div class="eyebrow">Vista rápida</div>
       <h2>Mira SportCheck en acción.</h2>
       <p class="hero-sub">Pasar lista, ver los informes, avisar al equipo y seguir un partido en directo — así se siente usar la app, sin salir de esta página.</p>
     </div>
@@ -875,7 +876,6 @@
 <section class="screens">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Por dentro</div>
       <h2>Así es unirte, crear un partido y llevar tu equipo.</h2>
     </div>
   </div>
@@ -1019,7 +1019,6 @@
 <section class="lineup" id="lineup">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">La alineación</div>
       <h2>Todo lo que un entrenador necesita, en una sola app.</h2>
     </div>
   </div>
@@ -1077,7 +1076,6 @@
 <section class="steps">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Salir al campo</div>
       <h2>Listo para usarse en tres pasos.</h2>
     </div>
     <div class="step-grid">
@@ -1145,7 +1143,6 @@
 
 <section class="final">
   <div class="wrap final-inner">
-    <div class="eyebrow">Pitido final</div>
     <h2 class="display">Deja el papel y el WhatsApp en el vestuario.</h2>
     <p>Rápida, sin publicidad y sin distracciones — pensada para el día a día real de un club.</p>
     <div class="cta-row">
